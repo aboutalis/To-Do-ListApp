@@ -23,5 +23,3 @@ This project is a simple web-based to-do list application implemented using HTML
 ## Getting Started
 
 To run the application locally, simply open the `index.html` file in a web browser. No additional dependencies or setup are required.
-
-Feel free to explore the code, make improvements, and customize the application according to your preferences. Enjoy using the To-Do List!
