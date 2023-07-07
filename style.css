@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(7, 6, 6, 0.815);
+}
+
+h1 {
+  margin-bottom: 75px;
+  margin-top: 25px;
+  font-size: 500%;
+  text-align: center;
+  color: antiquewhite;
+}
+
+.calculator {
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 10%;
+  background: rgb(177, 175, 175);
+  box-shadow: 0px 3px 15px;
+}
+
+.output {
+  width: auto;
+  max-width: 570px;
+  height: 15vh;
+  border: none;
+  border-radius: 5%;
+  background: rgb(61, 104, 25);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 24px;
+  box-shadow: 0px 3px 15px;
+  font-size: 35px;
+  text-align: right;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#operation {
+  height: 5vh;
+  color: #afaaaa;
+  text-align: right;
+  font-size: 30px;
+}
+
+.result .value {
+  color: #fff;
+}
+
+button {
+  border: none;
+  width: 60px;
+  height: 60px;
+  margin: 4px;
+  border-radius: 20px;
+  box-shadow: 0px 3px 5px;
+  cursor: pointer;
+  font-size: 23px;
+}
+
+button:active {
+  box-shadow: none;
+  transform: translateY(3px);
+}
+
+.equalButton {
+  background: orange;
+}
+
+.numberButton,
+.answer {
+  background: rgb(216, 211, 211);
+}
+
+.operationButton {
+  background: rgb(122, 121, 119);
+}
+
+#toggleButton {
+  background: burlywood;
+}
+
+.cp-text {
+  font-size: 15px;
+  color: rgb(177, 174, 174);
+}
+
+footer {
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+#answer {
+  background-color: rgb(153, 187, 145);
+  color: rgba(21, 22, 19, 0.897);
+  font-weight: bolder;
+  border: 2px solid rgba(103, 114, 82, 0.897);
+}
+
+/* Media query for tablets */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 400%;
+  }
+
+  button {
+    width: 45px;
+    height: 45px;
+    font-size: 15px;
+  }
+
+  .cp-text {
+    font-size: 12px;
+  }
+
+  .output {
+    max-width: 440px;
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  body {
+    min-width: 420px;
+    min-height: 670px;
+  }
+  h1 {
+    font-size: 300%;
+  }
+
+  button {
+    width: 35px;
+    height: 35px;
+    font-size: 12px;
+  }
+
+  .cp-text {
+    font-size: 10px;
+  }
+
+  .output {
+    max-width: 365px;
+  }
+}

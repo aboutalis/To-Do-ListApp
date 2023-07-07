@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+
+  <body>
+    <h1>Scientfic Calculator</h1>
+
+    <div class="calculator">
+      <div class="output">
+        <div class="result">
+          <div class="value" id="operation"></div>
+          <div class="value" id="result">0</div>
+        </div>
+      </div>
+
+      <div class="input">
+        <div>
+          <button class="operationButton scientific">√</button>
+          <button class="operationButton scientific">3√x</button>
+          <button class="operationButton scientific">x²</button>
+          <button class="operationButton scientific">x3</button>
+          <button class="operationButton">AC</button>
+          <button class="operationButton">DEL</button>
+          <button class="operationButton">%</button>
+          <button class="operationButton">/</button>
+        </div>
+
+        <div>
+          <button class="operationButton scientific">π</button>
+          <button class="operationButton scientific">cos</button>
+          <button class="operationButton scientific">sin</button>
+          <button class="operationButton scientific">tan</button>
+          <button class="numberButton">7</button>
+          <button class="numberButton">8</button>
+          <button class="numberButton">9</button>
+          <button class="operationButton">*</button>
+        </div>
+
+        <div>
+          <button class="operationButton scientific">e</button>
+          <button class="operationButton scientific">acos</button>
+          <button class="operationButton scientific">asin</button>
+          <button class="operationButton scientific">atan</button>
+          <button class="numberButton">4</button>
+          <button class="numberButton">5</button>
+          <button class="numberButton">6</button>
+          <button class="operationButton">-</button>
+        </div>
+
+        <div>
+          <button class="operationButton scientific">x!</button>
+          <button class="operationButton scientific">exp</button>
+          <button class="operationButton scientific">ln</button>
+          <button class="operationButton scientific">log</button>
+          <button class="numberButton">3</button>
+          <button class="numberButton">2</button>
+          <button class="numberButton">1</button>
+          <button class="operationButton">+</button>
+        </div>
+
+        <div>
+          <button id="toggleButton">></button>
+          <button class="operationButton scientific">x^y</button>
+          <button class="operationButton scientific">(</button>
+          <button class="operationButton scientific">)</button>
+          <button class="answer" id="answer">Ans</button>
+          <button class="numberButton">0</button>
+          <button class="operationButton">.</button>
+          <button class="equalButton">=</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+  <footer>
+    <p class="cp-text">
+      © Copyright 2023
+      <a href="https://aboutalis.github.io/aboutalis/" target="_blank"
+        >Anastasios Periklis Boutalis</a
+      >. All rights reserved.
+    </p>
+  </footer>
+</html>
