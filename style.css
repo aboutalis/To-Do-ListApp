@@ -6,159 +6,170 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-html {
-  width: 100%;
-  height: 100vh;
-  margin: 0;
+
+body{
+    background: #222;
 }
 
-body {
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: rgba(7, 6, 6, 0.815);
+.card{
+    width: 100%;
+    min-height: 100vh;
 }
 
-h1 {
-  margin-bottom: 75px;
-  margin-top: 25px;
-  font-size: 500%;
-  text-align: center;
-  color: antiquewhite;
+.container{
+    width: 100%;
+    max-width: 470px;
+    max-height: 700px;
+    background: #A68A64;
+    padding: 40px;
+    margin: 100px auto 50px;
+    border-radius: 20px;
+    text-align: center;
+    overflow-y: auto;
+    overflow-x: auto;
 }
 
-.calculator {
-  border: 1px solid black;
-  padding: 20px;
-  border-radius: 10%;
-  background: rgb(177, 175, 175);
-  box-shadow: 0px 3px 15px;
+.container h1{
+    color: #333D29;
+    font-weight: 900;
+    margin-bottom: 20px;
 }
 
-.output {
-  width: auto;
-  max-width: 570px;
-  height: 15vh;
-  border: none;
-  border-radius: 5%;
-  background: rgb(61, 104, 25);
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 24px;
-  box-shadow: 0px 3px 15px;
-  font-size: 35px;
-  text-align: right;
-  cursor: pointer;
-  overflow: hidden;
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #C2C5AA;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 20px;
 }
 
-#operation {
-  height: 5vh;
-  color: #afaaaa;
-  text-align: right;
-  font-size: 30px;
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 20px;
+    padding: 10px;
+    width:300px;
 }
 
-.result .value {
-  color: #fff;
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
 }
 
-button {
-  border: none;
-  width: 60px;
-  height: 60px;
-  margin: 4px;
-  border-radius: 20px;
-  box-shadow: 0px 3px 5px;
-  cursor: pointer;
-  font-size: 23px;
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    text-align: left;
+    border-bottom: 1px solid gray;
+    color: #fff;
 }
 
-button:active {
-  box-shadow: none;
-  transform: translateY(3px);
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
 }
 
-.equalButton {
-  background: orange;
+ul li.checked{
+    color: #3d3b3b;
+    text-decoration: line-through;
 }
 
-.numberButton,
-.answer {
-  background: rgb(216, 211, 211);
+ul li.checked::before{
+    background-image: url(images/checked.png);
 }
 
-.operationButton {
-  background: rgb(122, 121, 119);
+ul li span{
+    position: absolute;
+    right: 0;
+    /* top: 5px; */
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: red;
+    border-radius: 50%;
+    text-align: center;
 }
 
-#toggleButton {
-  background: burlywood;
-}
-
-.cp-text {
-  font-size: 15px;
-  color: rgb(177, 174, 174);
+ul li span:hover{
+    background: rgb(218, 218, 218);
+    width: 35px;
+    height: 35px;
 }
 
 footer {
-  margin-top: auto;
-  margin-bottom: 10px;
-}
-
-#answer {
-  background-color: rgb(153, 187, 145);
-  color: rgba(21, 22, 19, 0.897);
-  font-weight: bolder;
-  border: 2px solid rgba(103, 114, 82, 0.897);
-}
-
-/* Media query for tablets */
-@media (max-width: 1024px) {
-  h1 {
-    font-size: 400%;
-  }
-
-  button {
-    width: 45px;
-    height: 45px;
-    font-size: 15px;
-  }
-
-  .cp-text {
+    padding: 10px;
+    color: #888;
     font-size: 12px;
-  }
-
-  .output {
-    max-width: 440px;
-  }
+    position: fixed;     
+    text-align: center;    
+    bottom: 0px; 
+    width: 100%;
 }
 
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-  body {
-    min-width: 420px;
-    min-height: 670px;
-  }
-  h1 {
-    font-size: 300%;
-  }
+/* Media Queries */
 
-  button {
-    width: 35px;
-    height: 35px;
-    font-size: 12px;
-  }
-
-  .cp-text {
-    font-size: 10px;
-  }
-
-  .output {
-    max-width: 365px;
-  }
+/* Small screens (e.g., smartphones) */
+@media (max-width: 576px) {
+    .container {
+        padding: 20px;
+        margin: 50px auto 30px;
+        /* max-width: 100%; */
+        border-radius: 10px;
+    }
 }
+
+/* Medium screens (e.g., tablets) */
+@media (min-width: 577px) and (max-width: 992px) {
+    .container {
+        padding: 30px;
+        margin: 80px auto 50px;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 379px) {
+    button{
+        padding: 16px 25px;
+    }
+
+    input{
+        width: 150px;
+    }
+  }
+  
+  @media (max-width: 275px) {
+    button{
+        padding: 16px 25px;
+    }
+
+    input{
+        width: 150px;
+    }
+    .container{
+        min-width: 275px;;
+    }
+  }
+  
+  
