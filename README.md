@@ -26,5 +26,5 @@ To run the application locally, simply open the `index.html` file in a web brows
 
 
 <p align="center">
-  <img src="[https://github.com/aboutalis/CalculatorApp/assets/132292767/3b4ff55e-a2c3-4313-89d5-0303bfdc5af3](https://github.com/aboutalis/To-Do-ListApp/assets/132292767/bd3247de-cebd-4652-b9f7-4a99ed1a7b25)" alt="to-do-list">
+  <img src="(https://github.com/aboutalis/To-Do-ListApp/assets/132292767/bd3247de-cebd-4652-b9f7-4a99ed1a7b25)" alt="to-do-list">
 </p>
